@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Мини-диагностика: 6 коротких вопросов, чтобы понять ситуацию и подобрать помощь." />
+  <title>Диагностика — Национальная система восстановления</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Национальная система восстановления" />
+  <meta property="og:title" content="Диагностика — Национальная система восстановления" />
+  <meta property="og:description" content="Мини-диагностика: 6 коротких вопросов, чтобы понять ситуацию и подобрать помощь." />
+  <meta property="og:image" content="shared/assets/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Диагностика — Национальная система восстановления" />
+  <meta name="twitter:description" content="6 коротких вопросов, чтобы понять ситуацию и подобрать помощь." />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="icon" href="material-first-30-days.webp" type="image/webp" sizes="192x192" />
+  <link rel="apple-touch-icon" href="material-first-30-days.webp" sizes="180x180" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="НСВ" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Национальная система восстановления">
+        <img src="new_logo_dark.png" class="brand__icon brand__icon--dark" alt="" width="40" height="40" />
+        <img src="new_logo.png" class="brand__icon brand__icon--light" alt="" width="40" height="40" />
+        <span class="brand__wordmark"><b>Национальная система</b><span>восстановления</span></span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="help.html" class="nav__link">Помощь</a>
+        <a href="centers.html" class="nav__link">Центры</a>
+        <a href="materials.html" class="nav__link">Материалы</a>
+        <a href="diagnostic.html" class="nav__link">Диагностика</a>
+        <a href="../center-platform/index.html" class="nav__link">Для центров</a>
+      </nav>
+      <div class="header__actions">
+        <a href="help.html" class="btn btn--primary btn--sm">Получить помощь</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="help.html" class="mobile-menu__link">Помощь</a>
+      <a href="centers.html" class="mobile-menu__link">Центры</a>
+      <a href="materials.html" class="mobile-menu__link">Материалы</a>
+      <a href="diagnostic.html" class="mobile-menu__link">Диагностика</a>
+      <a href="../center-platform/index.html" class="mobile-menu__link">Для центров</a>
+      <a href="help.html" class="btn btn--primary">Получить помощь</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Хлебные крошки">
+          <a href="index.html">Главная</a><span>/</span><a href="help.html">Помощь</a><span>/</span><span>Диагностика</span>
+        </nav>
+        <div>
+          <span class="eyebrow">Конфиденциально</span>
+          <h1 class="page-hero__title">Мини-диагностика</h1>
+          <p class="page-hero__lead">6 коротких вопросов помогут понять ситуацию и подсказать первый шаг. Это не диагноз, а ориентир.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 40px;">
+      <div class="container">
+        <div class="quiz" id="quizRoot" aria-live="polite"><!-- render via diagnostic.js --></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="brand">
+          <img src="new_logo_dark.png" class="brand__icon brand__icon--dark" alt="" width="40" height="40" />
+        <img src="new_logo.png" class="brand__icon brand__icon--light" alt="" width="40" height="40" />
+        <span class="brand__wordmark"><b>Национальная система</b><span>восстановления</span></span>
+        </a>
+        <p class="footer__tagline">Единая цифровая платформа помощи при зависимостях.</p>
+      </div>
+      <nav class="footer__col">
+        <h4>Навигация</h4>
+        <a href="help.html">Помощь</a>
+        <a href="materials.html">Материалы</a>
+        <a href="centers.html">Центры</a>
+        <a href="diagnostic.html">Диагностика</a>
+      </nav>
+      <nav class="footer__col">
+        <h4>Контакты</h4>
+        <a href="tel:88001234567">8 800 123-45-67</a>
+        <a href="mailto:help@recovery.system">help@recovery.system</a>
+        <button type="button" class="linkish" data-soon="Telegram-канал скоро откроется">Telegram</button>
+      </nav>
+      <nav class="footer__col">
+        <h4>Документы</h4>
+        <button type="button" class="linkish" data-soon="Документ появится в ближайшем релизе">Конфиденциальность</button>
+        <button type="button" class="linkish" data-soon="Документ появится в ближайшем релизе">Условия</button>
+        <button type="button" class="linkish" data-soon="Раздел появится в ближайшем релизе">О системе</button>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 Национальная система восстановления</span>
+      <a href="../center-platform/index.html">Платформа для центров →</a>
+    </div>
+  </footer>
+
+  <script src="shared/config.js"></script>
+  <script src="shared/constants.js"></script>
+  <script src="shared/api.js"></script>
+  <script src="shared/routes.js"></script>
+  <script src="app.js"></script>
+  <script src="diagnostic.js"></script>
+</body>
+</html>

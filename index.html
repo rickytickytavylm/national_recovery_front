@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Цифровая система помощи при зависимости для родственников, людей в зависимости, специалистов и реабилитационных центров." />
+  <title>Национальная система восстановления — единая цифровая платформа помощи при зависимостях</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Национальная система восстановления" />
+  <meta property="og:title" content="Национальная система восстановления" />
+  <meta property="og:description" content="Единая цифровая платформа помощи при зависимостях: диагностика, проверенные центры и база знаний." />
+  <meta property="og:image" content="material-first-30-days.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Национальная система восстановления" />
+  <meta name="twitter:description" content="Единая цифровая платформа помощи при зависимостях." />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="icon" href="material-first-30-days.webp" type="image/webp" sizes="192x192" />
+  <link rel="apple-touch-icon" href="material-first-30-days.webp" sizes="180x180" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="НСВ" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Onest:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-home">
+  <div class="splash" id="splash" role="presentation" aria-hidden="true">
+    <div class="splash__inner">
+      <img src="new_logo.png" class="splash__logo" alt="" width="128" height="128" />
+      <p class="splash__title">Национальная система восстановления</p>
+    </div>
+  </div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header header--overlay" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Национальная система восстановления">
+        <img src="new_logo_dark.png" class="brand__icon brand__icon--dark" alt="" width="40" height="40" />
+        <img src="new_logo.png" class="brand__icon brand__icon--light" alt="" width="40" height="40" />
+        <span class="brand__wordmark"><b>Национальная система</b><span>восстановления</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="help.html" class="nav__link">Помощь</a>
+        <a href="centers.html" class="nav__link">Центры</a>
+        <a href="materials.html" class="nav__link">Материалы</a>
+        <a href="diagnostic.html" class="nav__link">Диагностика</a>
+        <a href="../center-platform/index.html" class="nav__link">Для центров</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="help.html" class="btn btn--primary btn--sm">Получить помощь</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="help.html" class="mobile-menu__link">Помощь</a>
+      <a href="centers.html" class="mobile-menu__link">Центры</a>
+      <a href="materials.html" class="mobile-menu__link">Материалы</a>
+      <a href="diagnostic.html" class="mobile-menu__link">Диагностика</a>
+      <a href="../center-platform/index.html" class="mobile-menu__link">Для центров</a>
+      <a href="help.html" class="btn btn--primary">Получить помощь</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO (gradient + product preview) ===================== -->
+    <section class="hero-c hero-c--gradient">
+      <a href="index.html" class="hero-c__logo" aria-label="Национальная система восстановления">
+        <img src="new_logo.png" alt="" width="48" height="48" />
+      </a>
+      <div class="container hero-c__inner">
+        <div class="hero-c__copy">
+          <h1 class="hero-c__title">Найдите понятный путь<br />к восстановлению</h1>
+          <p class="hero-c__subtitle">Единая цифровая платформа помощи при зависимостях.<br />Для тех, кому нужна помощь, их близких, специалистов и центров.</p>
+          <div class="hero-c__actions">
+            <a href="help.html" class="btn btn--hero-light btn--lg">Получить помощь</a>
+            <a href="diagnostic.html" class="btn btn--ghost btn--lg hero-c__btn-ghost">Пройти диагностику</a>
+          </div>
+        </div>
+
+        <div class="hero-c__stage">
+          <div class="hero-c__frame hero-c__frame--mac">
+            <div class="hero-c__bar" aria-hidden="true"><span></span><span></span><span></span></div>
+            <img src="under_hero.png" class="hero-c__slot" alt="Превью интерфейса платформы" loading="eager" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MATCHER ===================== -->
+    <section class="section" id="matcher">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">С чего начать</span>
+          <h2 class="section__title">Подберите помощь под вашу ситуацию</h2>
+          <p class="section__lead">Выберите, кто вы, — и мы покажем спокойный и понятный путь именно для вашего случая.</p>
+        </div>
+
+        <div class="matcher">
+          <article class="match-card reveal">
+            <img src="loved_ones-2.png" class="match-card__slot" alt="Поддержка близкого" loading="lazy" />
+            <div class="match-card__body">
+              <h3 class="match-card__title">Для родственника</h3>
+              <p class="match-card__text">Как помочь близкому и не выгореть самому.</p>
+              <ul class="match-card__list">
+                <li>Понять, что происходит</li>
+                <li>Получить консультацию</li>
+                <li>Найти проверенный центр</li>
+              </ul>
+              <a href="help.html" class="btn btn--ghost">Продолжить</a>
+            </div>
+          </article>
+
+          <article class="match-card reveal">
+            <img src="selfcare.png" class="match-card__slot" alt="Первый шаг к помощи" loading="lazy" />
+            <div class="match-card__body">
+              <h3 class="match-card__title">Мне нужна помощь</h3>
+              <p class="match-card__text">Спокойный и понятный первый шаг к восстановлению.</p>
+              <ul class="match-card__list">
+                <li>Пройти диагностику</li>
+                <li>Поговорить со специалистом</li>
+                <li>Начать программу</li>
+              </ul>
+              <a href="help.html" class="btn btn--primary">Продолжить</a>
+            </div>
+          </article>
+
+          <article class="match-card reveal">
+            <img src="for_professional.png" class="match-card__slot" alt="Инструменты для специалиста" loading="lazy" />
+            <div class="match-card__body">
+              <h3 class="match-card__title">Для специалиста</h3>
+              <p class="match-card__text">Методики, обучение и практика в единой системе.</p>
+              <ul class="match-card__list">
+                <li>Пройти обучение</li>
+                <li>Использовать методики</li>
+                <li>Вести сопровождение</li>
+              </ul>
+              <a href="materials.html" class="btn btn--ghost">Продолжить</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== КАТАЛОГ ЦЕНТРОВ ===================== -->
+    <section class="section section--gradient" id="centers">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Каталог</span>
+          <h2 class="section__title">Реабилитационные центры</h2>
+          <p class="section__lead">Только проверенные центры с понятными форматами помощи и прозрачными условиями.</p>
+        </div>
+
+        <div class="centers">
+          <article class="center-card reveal">
+            <img src="center1.png" class="center-card__media" alt="Фото центра «Ясность»" loading="lazy" />
+            <div class="center-card__body">
+              <div class="center-card__badges">
+                <span class="cbadge cbadge--verified">Проверен</span>
+                <span class="cbadge cbadge--assoc">Участник ассоциации</span>
+              </div>
+              <div class="center-card__head"><h3>Центр «Ясность»</h3></div>
+              <p class="center-card__city">Москва</p>
+              <div class="center-card__tags">
+                <span class="tag">Стационар</span>
+                <span class="tag">Амбулаторно</span>
+              </div>
+              <div class="center-card__meta"><span><b>4.9</b> · 128 отзывов</span><span>Программа от 21 дня</span></div>
+              <div class="center-card__foot"><a href="centers.html" class="link-arrow">Подробнее</a></div>
+            </div>
+          </article>
+
+          <article class="center-card reveal">
+            <img src="center2.png" class="center-card__media" alt="Фото центра «Опора»" loading="lazy" />
+            <div class="center-card__body">
+              <div class="center-card__badges">
+                <span class="cbadge cbadge--verified">Проверен</span>
+                <span class="cbadge cbadge--online">Онлайн-консультация</span>
+              </div>
+              <div class="center-card__head"><h3>Центр «Опора»</h3></div>
+              <p class="center-card__city">Санкт-Петербург</p>
+              <div class="center-card__tags">
+                <span class="tag">Стационар</span>
+                <span class="tag">Сопровождение</span>
+              </div>
+              <div class="center-card__meta"><span><b>4.8</b> · 96 отзывов</span><span>Программа от 30 дней</span></div>
+              <div class="center-card__foot"><a href="centers.html" class="link-arrow">Подробнее</a></div>
+            </div>
+          </article>
+
+          <article class="center-card reveal">
+            <img src="center3.png" class="center-card__media" alt="Фото центра «Путь»" loading="lazy" />
+            <div class="center-card__body">
+              <div class="center-card__badges">
+                <span class="cbadge cbadge--online">Онлайн-консультация</span>
+              </div>
+              <div class="center-card__head"><h3>Центр «Путь»</h3></div>
+              <p class="center-card__city">Казань</p>
+              <div class="center-card__tags">
+                <span class="tag">Амбулаторно</span>
+                <span class="tag">Онлайн</span>
+              </div>
+              <div class="center-card__meta"><span><b>4.6</b> · 41 отзыв</span><span>Гибкий формат</span></div>
+              <div class="center-card__foot"><a href="centers.html" class="link-arrow">Подробнее</a></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="centers__cta reveal">
+          <a href="centers.html" class="btn btn--dark btn--lg">Смотреть все центры</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TRUST ===================== -->
+    <section class="section" id="trust">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Доверие</span>
+          <h2 class="section__title">Система строится на прозрачности и проверке</h2>
+          <p class="section__lead">Единые критерии, проверка центров и открытые данные — чтобы решение было спокойным и осознанным.</p>
+        </div>
+
+        <div class="trust-stats reveal">
+          <div class="trust-stat"><div class="trust-stat__num">120+</div><div class="trust-stat__label">Проверенных центров</div></div>
+          <div class="trust-stat"><div class="trust-stat__num">6</div><div class="trust-stat__label">Форматов помощи</div></div>
+          <div class="trust-stat"><div class="trust-stat__num">0 ₽</div><div class="trust-stat__label">За консультацию и подбор</div></div>
+        </div>
+
+        <div class="trust">
+          <article class="trust-card reveal">
+            <div class="trust-card__lead trust-card__lead--accent">Проверка</div>
+            <h3>Проверка центров</h3>
+            <p>Каждый центр проходит модерацию и подтверждает данные перед публикацией.</p>
+          </article>
+          <article class="trust-card reveal">
+            <div class="trust-card__lead">Единые</div>
+            <h3>Единые критерии</h3>
+            <p>Понятные и одинаковые требования ко всем участникам системы.</p>
+          </article>
+          <article class="trust-card reveal">
+            <div class="trust-card__lead">Знания</div>
+            <h3>Образовательные материалы</h3>
+            <p>Проверенные статьи и гайды для людей, близких и специалистов.</p>
+          </article>
+          <article class="trust-card reveal">
+            <div class="trust-card__lead">Маршрут</div>
+            <h3>Маршрутизация обращений</h3>
+            <p>Обращение попадает к подходящему центру, а не теряется в пустоте.</p>
+          </article>
+          <article class="trust-card reveal">
+            <div class="trust-card__lead">Рядом</div>
+            <h3>Работа с родственниками</h3>
+            <p>Поддержка тех, кто рядом, — отдельное и важное направление системы.</p>
+          </article>
+          <article class="trust-card reveal">
+            <div class="trust-card__lead">Данные</div>
+            <h3>Данные для аналитики</h3>
+            <p>Прозрачные показатели помогают видеть результат и улучшать помощь.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ДИАГНОСТИКА ===================== -->
+    <section class="section section--gradient" id="diagnostic">
+      <div class="container">
+        <div class="diag-band reveal">
+          <div class="diag-band__head">
+            <span class="eyebrow">Диагностика</span>
+            <h2 class="section__title">Ответьте на несколько вопросов</h2>
+            <p class="section__lead">Мини-диагностика помогает понять, с чего начать и какой формат помощи может подойти.</p>
+          </div>
+          <div class="steps">
+            <div class="step"><span class="step__num">1</span><h3>Ситуация</h3><p>Коротко опишем, что происходит сейчас.</p></div>
+            <div class="step"><span class="step__num">2</span><h3>Уровень срочности</h3><p>Определим, насколько быстро нужна помощь.</p></div>
+            <div class="step"><span class="step__num">3</span><h3>Рекомендации</h3><p>Покажем понятные следующие шаги.</p></div>
+          </div>
+          <div class="diag-band__cta">
+            <a href="diagnostic.html" class="btn btn--primary btn--lg">Пройти диагностику</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== МАТЕРИАЛЫ (HUB) ===================== -->
+    <section class="section" id="materials">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">База знаний</span>
+          <h2 class="section__title">Материалы, которые помогают</h2>
+          <p class="section__lead">Собрано как ресурс-хаб: по этапам пути, а не как обычный блог.</p>
+        </div>
+
+        <div class="hub-cats reveal">
+          <a href="materials.html" class="hub-cat is-active">Начать путь</a>
+          <a href="materials.html" class="hub-cat">Помочь близкому</a>
+          <a href="materials.html" class="hub-cat">Выбрать центр</a>
+          <a href="materials.html" class="hub-cat">После лечения</a>
+          <a href="materials.html" class="hub-cat">Для специалистов</a>
+        </div>
+
+        <div class="materials" id="homeMaterials">
+          <!-- featured materials via app.js -->
+        </div>
+
+        <div class="centers__cta reveal">
+          <a href="materials.html" class="btn btn--ghost btn--lg">Все материалы</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ФИНАЛЬНЫЙ CTA ===================== -->
+    <section class="cta" id="final-cta">
+      <div class="container cta__inner reveal">
+        <h2 class="cta__title">Начните с первого шага</h2>
+        <p class="cta__text">Один спокойный шаг сегодня меняет направление завтра.</p>
+        <div class="cta__actions">
+          <a href="help.html" class="btn btn--primary btn--lg">Получить помощь</a>
+          <a href="diagnostic.html" class="btn btn--ghost btn--lg">Пройти диагностику</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="brand">
+          <img src="new_logo_dark.png" class="brand__icon brand__icon--dark" alt="" width="44" height="44" />
+          <span class="brand__wordmark"><b>Национальная система</b><span>восстановления</span></span>
+        </a>
+        <p class="footer__tagline">Единая цифровая платформа помощи при зависимостях.</p>
+      </div>
+
+      <nav class="footer__col">
+        <h4>Навигация</h4>
+        <a href="help.html">Помощь</a>
+        <a href="centers.html">Центры</a>
+        <a href="materials.html">Материалы</a>
+        <a href="diagnostic.html">Диагностика</a>
+      </nav>
+
+      <nav class="footer__col">
+        <h4>Контакты</h4>
+        <a href="tel:88001234567">8 800 123-45-67</a>
+        <a href="mailto:help@recovery.system">help@recovery.system</a>
+        <button type="button" class="linkish" data-soon="Telegram-канал скоро откроется">Telegram</button>
+      </nav>
+
+      <nav class="footer__col">
+        <h4>Документы</h4>
+        <button type="button" class="linkish" data-soon="Документ появится в ближайшем релизе">Конфиденциальность</button>
+        <button type="button" class="linkish" data-soon="Документ появится в ближайшем релизе">Условия</button>
+        <button type="button" class="linkish" data-soon="Раздел появится в ближайшем релизе">О системе</button>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 Национальная система восстановления</span>
+      <a href="../center-platform/index.html">Платформа для центров →</a>
+    </div>
+  </footer>
+
+  <script src="shared/config.js"></script>
+  <script src="shared/constants.js"></script>
+  <script src="shared/api.js"></script>
+  <script src="shared/routes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

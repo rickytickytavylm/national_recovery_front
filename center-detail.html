@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <meta name="description" content="Страница реабилитационного центра: программы, форматы помощи, отзывы и заявка на консультацию." />
+
+  <title>Центр — Национальная система восстановления</title>
+
+  <meta property="og:type" content="website" />
+
+  <meta property="og:title" content="Реабилитационный центр — Национальная система восстановления" />
+
+  <meta property="og:description" content="Проверенный центр помощи при зависимостях: программы, форматы, отзывы." />
+
+  <meta property="og:image" content="center1.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="theme-color" content="#0f766e" />
+
+  <link rel="icon" href="material-first-30-days.webp" type="image/webp" sizes="192x192" />
+
+  <link rel="apple-touch-icon" href="material-first-30-days.webp" sizes="180x180" />
+
+  <link rel="manifest" href="site.webmanifest" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <meta name="apple-mobile-web-app-title" content="НСВ" />
+
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body class="page-center">
+
+  <header class="header header--detail" id="header">
+
+    <div class="container header__inner">
+
+      <a href="index.html" class="brand" aria-label="Национальная система восстановления">
+
+        <img src="new_logo_dark.png" class="brand__icon brand__icon--dark" alt="" width="40" height="40" />
+        <img src="new_logo.png" class="brand__icon brand__icon--light" alt="" width="40" height="40" />
+        <span class="brand__wordmark"><b>Национальная система</b><span>восстановления</span></span>
+
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+
+        <a href="help.html" class="nav__link">Помощь</a>
+
+        <a href="centers.html" class="nav__link">Центры</a>
+
+        <a href="materials.html" class="nav__link">Материалы</a>
+
+        <a href="diagnostic.html" class="nav__link">Диагностика</a>
+
+        <a href="../center-platform/index.html" class="nav__link">Для центров</a>
+
+      </nav>
+
+      <div class="header__actions">
+
+        <a href="help.html" class="btn btn--primary btn--sm">Получить помощь</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню" aria-expanded="false">
+
+          <span></span><span></span><span></span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+
+      <a href="help.html" class="mobile-menu__link">Помощь</a>
+
+      <a href="centers.html" class="mobile-menu__link">Центры</a>
+
+      <a href="materials.html" class="mobile-menu__link">Материалы</a>
+
+      <a href="diagnostic.html" class="mobile-menu__link">Диагностика</a>
+
+      <a href="../center-platform/index.html" class="mobile-menu__link">Для центров</a>
+
+      <a href="help.html" class="btn btn--primary">Получить помощь</a>
+
+    </div>
+
+  </header>
+
+
+
+  <main class="center-page">
+
+    <div class="center-layout">
+
+      <figure class="center__media" id="centerFigure">
+
+        <img id="centerCover" class="center__media-img" src="center1.png" alt="Фотография центра" loading="eager" />
+
+      </figure>
+
+
+
+      <header class="center__head">
+
+        <div class="center__head-inner">
+
+          <nav class="breadcrumb center__crumb" aria-label="Хлебные крошки">
+
+            <a href="index.html">Главная</a><span>/</span><a href="centers.html">Центры</a><span>/</span><span id="crumbName">Центр</span>
+
+          </nav>
+
+          <div class="detail-head">
+
+            <h1 id="centerName">Центр</h1>
+
+            <span id="centerStatus"></span>
+
+          </div>
+
+          <p class="detail-sub" id="centerCity"></p>
+
+        </div>
+
+      </header>
+
+
+
+      <div class="center__main">
+
+        <div class="container">
+
+          <div class="detail__grid detail">
+
+            <div class="detail__main">
+
+              <section class="prose">
+
+                <h2>О центре</h2>
+
+                <p id="centerAbout"></p>
+
+              </section>
+
+
+
+              <div class="spec" id="centerSpec"></div>
+
+
+
+              <section>
+
+                <h2 class="prose">Программы</h2>
+
+                <div id="centerPrograms"></div>
+
+              </section>
+
+
+
+              <section style="margin-top:36px">
+
+                <h2 class="prose">Отзывы</h2>
+
+                <div class="reviews-list" id="centerReviews"></div>
+
+              </section>
+
+            </div>
+
+
+
+            <aside class="detail__aside">
+
+              <div class="aside-card">
+
+                <h3>Оставить заявку</h3>
+
+                <form data-form="lead" novalidate>
+
+                  <div class="field">
+
+                    <label for="leadName">Ваше имя</label>
+
+                    <input id="leadName" name="name" type="text" required placeholder="Как к вам обращаться" />
+
+                  </div>
+
+                  <div class="field">
+
+                    <label for="leadPhone">Телефон</label>
+
+                    <input id="leadPhone" name="phone" type="tel" required placeholder="+7 ___ ___-__-__" />
+
+                  </div>
+
+                  <div class="field">
+
+                    <label for="leadComment">Комментарий</label>
+
+                    <textarea id="leadComment" name="comment" placeholder="Коротко опишите ситуацию"></textarea>
+
+                  </div>
+
+                  <button type="submit" class="btn btn--primary">Отправить заявку</button>
+
+                </form>
+
+                <div class="form-success" data-form-success hidden>
+
+                  <span class="form-success__badge">Заявка отправлена</span>
+
+                  <h3>Спасибо за обращение</h3>
+
+                  <p>Специалист центра свяжется с вами в течение рабочего дня.<br />Номер заявки: <span class="form-success__id" data-lead-id>—</span></p>
+
+                </div>
+
+              </div>
+
+
+
+              <div class="aside-card">
+
+                <h3>Контакты</h3>
+
+                <p class="detail-sub" style="font-size:15px;margin:0 0 6px" id="centerPhone"></p>
+
+                <p class="detail-sub" style="font-size:15px;margin:0" id="centerEmail"></p>
+
+              </div>
+
+            </aside>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <section class="cta" style="margin-top:64px">
+
+      <div class="container cta__inner reveal">
+
+        <h2 class="cta__title">Сомневаетесь в выборе?</h2>
+
+        <p class="cta__text">Пройдите короткую диагностику — подскажем подходящий формат помощи.</p>
+
+        <div class="cta__actions">
+
+          <a href="diagnostic.html" class="btn btn--primary btn--lg">Пройти диагностику</a>
+
+          <a href="centers.html" class="btn btn--ghost btn--lg">Вернуться к каталогу</a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <footer class="footer">
+
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+
+        <a href="index.html" class="brand">
+
+          <img src="new_logo_dark.png" class="brand__icon brand__icon--dark" alt="" width="40" height="40" />
+        <img src="new_logo.png" class="brand__icon brand__icon--light" alt="" width="40" height="40" />
+        <span class="brand__wordmark"><b>Национальная система</b><span>восстановления</span></span>
+
+        </a>
+
+        <p class="footer__tagline">Единая цифровая платформа помощи при зависимостях.</p>
+
+      </div>
+
+      <nav class="footer__col">
+
+        <h4>Навигация</h4>
+
+        <a href="help.html">Помощь</a>
+
+        <a href="materials.html">Материалы</a>
+
+        <a href="centers.html">Центры</a>
+
+        <a href="diagnostic.html">Диагностика</a>
+
+      </nav>
+
+      <nav class="footer__col">
+
+        <h4>Контакты</h4>
+
+        <a href="tel:88001234567">8 800 123-45-67</a>
+
+        <a href="mailto:help@recovery.system">help@recovery.system</a>
+
+        <button type="button" class="linkish" data-soon="Telegram-канал скоро откроется">Telegram</button>
+
+      </nav>
+
+      <nav class="footer__col">
+
+        <h4>Документы</h4>
+
+        <button type="button" class="linkish" data-soon="Документ появится в ближайшем релизе">Конфиденциальность</button>
+
+        <button type="button" class="linkish" data-soon="Документ появится в ближайшем релизе">Условия</button>
+
+        <button type="button" class="linkish" data-soon="Раздел появится в ближайшем релизе">О системе</button>
+
+      </nav>
+
+    </div>
+
+    <div class="container footer__bottom">
+
+      <span>© 2026 Национальная система восстановления</span>
+
+      <a href="../center-platform/index.html">Платформа для центров →</a>
+
+    </div>
+
+  </footer>
+
+
+
+  <script src="shared/config.js"></script>
+
+  <script src="shared/constants.js"></script>
+
+  <script src="shared/api.js"></script>
+
+  <script src="shared/routes.js"></script>
+
+  <script src="app.js"></script>
+
+  <script src="center-detail.js"></script>
+
+</body>
+
+</html>
+
+

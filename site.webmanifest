@@ -1,0 +1,54 @@
+{
+  "name": "Национальная система восстановления",
+  "short_name": "НСВ",
+  "description": "Единая цифровая платформа помощи при зависимостях: диагностика, проверенные центры и база знаний.",
+  "lang": "ru",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#083a36",
+  "theme_color": "#0f766e",
+  "categories": ["health", "medical", "lifestyle"],
+  "icons": [
+    {
+      "src": "material-first-30-days.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "material-first-30-days.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "material-first-30-days.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Получить помощь",
+      "short_name": "Помощь",
+      "url": "./help.html",
+      "icons": [{ "src": "material-first-30-days.webp", "sizes": "192x192", "type": "image/webp" }]
+    },
+    {
+      "name": "Пройти диагностику",
+      "short_name": "Диагностика",
+      "url": "./diagnostic.html",
+      "icons": [{ "src": "material-first-30-days.webp", "sizes": "192x192", "type": "image/webp" }]
+    },
+    {
+      "name": "Материалы",
+      "short_name": "Гайды",
+      "url": "./materials.html",
+      "icons": [{ "src": "material-first-30-days.webp", "sizes": "192x192", "type": "image/webp" }]
+    }
+  ]
+}
