@@ -13,7 +13,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Материалы — Национальная система восстановления" />
   <meta name="twitter:description" content="База знаний о помощи при зависимостях." />
-  <meta name="theme-color" content="#0f766e" />
+  <meta name="theme-color" content="#083a36" />
   <link rel="icon" href="material-first-30-days.webp" type="image/webp" sizes="192x192" />
   <link rel="apple-touch-icon" href="material-first-30-days.webp" sizes="180x180" />
   <link rel="manifest" href="site.webmanifest" />
@@ -73,26 +73,31 @@
 
     <section class="section" style="padding-top: 40px;">
       <div class="container">
-        <div class="filters">
+        <div class="filter-panel">
           <label class="search">
             <span class="search__icon" aria-hidden="true"></span>
             <input type="search" id="searchInput" placeholder="Поиск по материалам" aria-label="Поиск материалов" />
           </label>
-        </div>
 
-        <div class="filters">
-          <div class="chip-group" id="audienceFilter" role="group" aria-label="Аудитория">
-            <button class="chip-btn is-active" data-audience="all">Все</button>
-            <button class="chip-btn" data-audience="Родственникам">Родственникам</button>
-            <button class="chip-btn" data-audience="Восстановление">Восстановление</button>
-            <button class="chip-btn" data-audience="Специалистам">Специалистам</button>
+          <div class="filter-group">
+            <span class="filter-group__label">Аудитория</span>
+            <div class="chip-group" id="audienceFilter" role="group" aria-label="Аудитория">
+              <button class="chip-btn is-active" data-audience="all">Все</button>
+              <button class="chip-btn" data-audience="Родственникам">Родственникам</button>
+              <button class="chip-btn" data-audience="Восстановление">Восстановление</button>
+              <button class="chip-btn" data-audience="Специалистам">Специалистам</button>
+            </div>
           </div>
-          <div class="chip-group" id="typeFilter" role="group" aria-label="Тип">
-            <button class="chip-btn is-active" data-type="all">Любой тип</button>
-            <button class="chip-btn" data-type="Статья">Статьи</button>
-            <button class="chip-btn" data-type="Лекция">Лекции</button>
-            <button class="chip-btn" data-type="Курс">Курсы</button>
-            <button class="chip-btn" data-type="Гайд">Гайды</button>
+
+          <div class="filter-group">
+            <span class="filter-group__label">Тип материала</span>
+            <div class="chip-group" id="typeFilter" role="group" aria-label="Тип">
+              <button class="chip-btn is-active" data-type="all">Любой тип</button>
+              <button class="chip-btn" data-type="Статья">Статьи</button>
+              <button class="chip-btn" data-type="Лекция">Лекции</button>
+              <button class="chip-btn" data-type="Курс">Курсы</button>
+              <button class="chip-btn" data-type="Гайд">Гайды</button>
+            </div>
           </div>
         </div>
 

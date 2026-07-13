@@ -8,6 +8,7 @@
     const key = "nsv:splash-seen";
     const finish = () => {
       splash.classList.add("is-done");
+      document.documentElement.classList.remove("splash-active");
       document.body.classList.remove("splash-active");
       sessionStorage.setItem(key, "1");
       window.setTimeout(() => splash.remove(), 600);
@@ -15,6 +16,7 @@
     if (sessionStorage.getItem(key)) {
       splash.remove();
     } else {
+      document.documentElement.classList.add("splash-active");
       document.body.classList.add("splash-active");
       window.setTimeout(finish, 2400);
     }

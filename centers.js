@@ -75,11 +75,10 @@
           <div class="center-card__tags">
             ${c.formats.map((f) => `<span class="tag">${f}</span>`).join("")}
           </div>
-          <div class="center-card__meta">
-            <span><b>${c.rating.toFixed(1)}</b> · ${c.reviews} ${reviewsWord(c.reviews)}</span>
-            <span>${scoreWord(c.rating)}</span>
-          </div>
           <div class="center-card__foot">
+            <div class="center-card__rating">
+              <b>${c.rating.toFixed(1)}</b> · ${c.reviews} ${reviewsWord(c.reviews)} · ${scoreWord(c.rating)}
+            </div>
             <a href="center-detail.html?id=${c.id}" class="link-arrow">Подробнее</a>
           </div>
         </div>

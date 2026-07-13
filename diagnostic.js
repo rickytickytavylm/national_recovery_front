@@ -71,7 +71,7 @@
       badge: "Средний уровень риска",
       title: "Стоит поговорить со специалистом",
       text: "Есть признаки, которые важно обсудить. Бесплатная консультация поможет понять ситуацию точнее и выбрать формат помощи.",
-      primary: { t: "Получить консультацию", href: "help.html" },
+      primary: { t: "Получить консультацию", href: "help.html?from=diagnostic" },
       secondary: { t: "Найти центр", href: "centers.html" }
     },
     {
@@ -79,7 +79,7 @@
       badge: "Высокий уровень риска",
       title: "Рекомендуем обратиться за помощью",
       text: "Ответы указывают на выраженные трудности. Не откладывайте — специалисты помогут подобрать программу и центр.",
-      primary: { t: "Получить помощь", href: "help.html" },
+      primary: { t: "Получить помощь", href: "help.html?from=diagnostic" },
       secondary: { t: "Найти центр", href: "centers.html" }
     }
   ];
@@ -108,16 +108,18 @@
       <div class="quiz__progress"><div class="quiz__progress-bar" style="width:${pct}%"></div></div>
       <div class="quiz__meta"><span>Вопрос ${current + 1} из ${questions.length}</span><span>${pct}%</span></div>
       <div class="quiz__card">
-        <h2 class="quiz__question">${q.q}</h2>
-        <div class="quiz__options">
-          ${q.options
-            .map(
-              (o, i) =>
-                `<button class="quiz__option${answers[current] === i ? " is-selected" : ""}" data-i="${i}">
-                   <span class="dot-radio"></span><span>${o.t}</span>
-                 </button>`
-            )
-            .join("")}
+        <div class="quiz__body">
+          <h2 class="quiz__question">${q.q}</h2>
+          <div class="quiz__options">
+            ${q.options
+              .map(
+                (o, i) =>
+                  `<button class="quiz__option${answers[current] === i ? " is-selected" : ""}" data-i="${i}">
+                     <span class="dot-radio"></span><span>${o.t}</span>
+                   </button>`
+              )
+              .join("")}
+          </div>
         </div>
         <div class="quiz__nav">
           <button class="btn btn--ghost" data-nav="prev"${current === 0 ? " style=\"visibility:hidden\"" : ""}>Назад</button>

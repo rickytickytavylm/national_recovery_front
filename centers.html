@@ -13,7 +13,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Центры — Национальная система восстановления" />
   <meta name="twitter:description" content="Каталог проверенных реабилитационных центров." />
-  <meta name="theme-color" content="#0f766e" />
+  <meta name="theme-color" content="#083a36" />
   <link rel="icon" href="material-first-30-days.webp" type="image/webp" sizes="192x192" />
   <link rel="apple-touch-icon" href="material-first-30-days.webp" sizes="180x180" />
   <link rel="manifest" href="site.webmanifest" />
@@ -73,33 +73,39 @@
 
     <section class="section" style="padding-top: 40px;">
       <div class="container">
-        <div class="filters">
+        <div class="filter-panel">
           <label class="search">
             <span class="search__icon" aria-hidden="true"></span>
             <input type="search" id="searchInput" placeholder="Поиск по названию или городу" aria-label="Поиск центров" />
           </label>
-        </div>
 
-        <div class="filters">
-          <div class="chip-group" id="cityFilter" role="group" aria-label="Город">
-            <button class="chip-btn is-active" data-city="all">Все города</button>
-            <button class="chip-btn" data-city="Москва">Москва</button>
-            <button class="chip-btn" data-city="Санкт-Петербург">Санкт-Петербург</button>
-            <button class="chip-btn" data-city="Казань">Казань</button>
-            <button class="chip-btn" data-city="Екатеринбург">Екатеринбург</button>
+          <div class="filter-group">
+            <span class="filter-group__label">Город</span>
+            <div class="chip-group" id="cityFilter" role="group" aria-label="Город">
+              <button class="chip-btn is-active" data-city="all">Все города</button>
+              <button class="chip-btn" data-city="Москва">Москва</button>
+              <button class="chip-btn" data-city="Санкт-Петербург">Санкт-Петербург</button>
+              <button class="chip-btn" data-city="Казань">Казань</button>
+              <button class="chip-btn" data-city="Екатеринбург">Екатеринбург</button>
+            </div>
           </div>
-        </div>
 
-        <div class="filters">
-          <div class="chip-group" id="formatFilter" role="group" aria-label="Формат помощи">
-            <button class="chip-btn is-active" data-format="all">Любой формат</button>
-            <button class="chip-btn" data-format="Стационар">Стационар</button>
-            <button class="chip-btn" data-format="Амбулаторно">Амбулаторно</button>
-            <button class="chip-btn" data-format="Онлайн">Онлайн</button>
+          <div class="filter-group">
+            <span class="filter-group__label">Формат</span>
+            <div class="chip-group" id="formatFilter" role="group" aria-label="Формат помощи">
+              <button class="chip-btn is-active" data-format="all">Любой формат</button>
+              <button class="chip-btn" data-format="Стационар">Стационар</button>
+              <button class="chip-btn" data-format="Амбулаторно">Амбулаторно</button>
+              <button class="chip-btn" data-format="Онлайн">Онлайн</button>
+            </div>
           </div>
-          <div class="chip-group" id="statusFilter" role="group" aria-label="Статус">
-            <button class="chip-btn is-active" data-status="all">Все</button>
-            <button class="chip-btn" data-status="verified">Только проверенные</button>
+
+          <div class="filter-group">
+            <span class="filter-group__label">Статус</span>
+            <div class="chip-group" id="statusFilter" role="group" aria-label="Статус">
+              <button class="chip-btn is-active" data-status="all">Все</button>
+              <button class="chip-btn" data-status="verified">Только проверенные</button>
+            </div>
           </div>
         </div>
 
