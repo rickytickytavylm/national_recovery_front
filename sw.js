@@ -1,5 +1,5 @@
 /* NSV Public Platform — service worker */
-const CACHE = "nsv-public-v6";
+const CACHE = "nsv-public-v7";
 const OFFLINE_URL = "offline.html";
 
 const PRECACHE = [
@@ -21,6 +21,15 @@ const PRECACHE = [
   "centers.js",
   "center-detail.js",
   "site.webmanifest",
+  "new_logo.png",
+  "new_logo_dark.png",
+  "under_hero.webp",
+  "loved_ones-2.webp",
+  "selfcare.webp",
+  "for_professional.webp",
+  "center1.webp",
+  "center2.webp",
+  "center3.webp",
   "material-first-30-days.webp",
   "material-talk-to-loved-one.webp",
   "material-codependency.webp",

@@ -3,7 +3,7 @@
   "use strict";
 
   const api = window.NSV_API;
-  const imgOf = window.NSVCenterImg || ((c) => (c && c.image) || "center1.png");
+  const imgOf = window.NSVCenterImg || ((c) => (c && c.image) || "center1.webp");
   const params = new URLSearchParams(location.search);
   const id = params.get("id");
 

@@ -29,7 +29,7 @@ window.NSV_DATA = {
 
   centers: [
     {
-      id: "yasnost", name: "Центр «Ясность»", city: "Москва", image: "center1.png",
+      id: "yasnost", name: "Центр «Ясность»", city: "Москва", image: "center1.webp",
       formats: ["Стационар", "Амбулаторно"], status: "verified",
       rating: 4.9, reviews: 128, established: 2016, seats: 32, duration: "от 30 дней",
       phone: "8 800 123-45-67", email: "info@yasnost.local",
@@ -42,7 +42,7 @@ window.NSV_DATA = {
       ]
     },
     {
-      id: "opora", name: "Центр «Опора»", city: "Санкт-Петербург", image: "center2.png",
+      id: "opora", name: "Центр «Опора»", city: "Санкт-Петербург", image: "center2.webp",
       formats: ["Стационар", "Амбулаторно"], status: "verified",
       rating: 4.8, reviews: 96, established: 2014, seats: 28, duration: "от 45 дней",
       phone: "8 800 123-45-68", email: "info@opora.local",
@@ -54,7 +54,7 @@ window.NSV_DATA = {
       ]
     },
     {
-      id: "put", name: "Центр «Путь»", city: "Казань", image: "center3.png",
+      id: "put", name: "Центр «Путь»", city: "Казань", image: "center3.webp",
       formats: ["Амбулаторно", "Онлайн"], status: "review",
       rating: 4.6, reviews: 41, established: 2019, seats: 0, duration: "гибко",
       phone: "8 800 123-45-69", email: "info@put.local",
@@ -66,7 +66,7 @@ window.NSV_DATA = {
       ]
     },
     {
-      id: "vozrozhdenie", name: "Центр «Возрождение»", city: "Екатеринбург", image: "center4.png",
+      id: "vozrozhdenie", name: "Центр «Возрождение»", city: "Екатеринбург", image: "center4.webp",
       formats: ["Стационар"], status: "verified",
       rating: 4.7, reviews: 73, established: 2012, seats: 40, duration: "от 60 дней",
       phone: "8 800 123-45-70", email: "info@vozrozhdenie.local",
@@ -77,7 +77,7 @@ window.NSV_DATA = {
       ]
     },
     {
-      id: "garmoniya", name: "Центр «Гармония»", city: "Москва", image: "center5.png",
+      id: "garmoniya", name: "Центр «Гармония»", city: "Москва", image: "center5.webp",
       formats: ["Амбулаторно", "Онлайн"], status: "verified",
       rating: 4.8, reviews: 154, established: 2018, seats: 0, duration: "гибко",
       phone: "8 800 123-45-71", email: "info@garmoniya.local",
@@ -89,7 +89,7 @@ window.NSV_DATA = {
       ]
     },
     {
-      id: "novyy-den", name: "Центр «Новый день»", city: "Санкт-Петербург", image: "center6.png",
+      id: "novyy-den", name: "Центр «Новый день»", city: "Санкт-Петербург", image: "center6.webp",
       formats: ["Онлайн"], status: "review",
       rating: 4.5, reviews: 29, established: 2021, seats: 0, duration: "гибко",
       phone: "8 800 123-45-72", email: "info@novyden.local",
@@ -100,7 +100,7 @@ window.NSV_DATA = {
       ]
     },
     {
-      id: "mayak", name: "Центр «Маяк»", city: "Казань", image: "center7.png",
+      id: "mayak", name: "Центр «Маяк»", city: "Казань", image: "center7.webp",
       formats: ["Стационар", "Амбулаторно"], status: "verified",
       rating: 4.9, reviews: 88, established: 2015, seats: 24, duration: "от 30 дней",
       phone: "8 800 123-45-73", email: "info@mayak.local",
@@ -112,7 +112,7 @@ window.NSV_DATA = {
       ]
     },
     {
-      id: "istok", name: "Центр «Исток»", city: "Екатеринбург", image: "center8.png",
+      id: "istok", name: "Центр «Исток»", city: "Екатеринбург", image: "center8.webp",
       formats: ["Амбулаторно"], status: "verified",
       rating: 4.6, reviews: 52, established: 2017, seats: 0, duration: "гибко",
       phone: "8 800 123-45-74", email: "info@istok.local",
@@ -123,7 +123,7 @@ window.NSV_DATA = {
       ]
     },
     {
-      id: "sputnik", name: "Центр «Спутник»", city: "Москва", image: "center9.png",
+      id: "sputnik", name: "Центр «Спутник»", city: "Москва", image: "center9.webp",
       formats: ["Стационар", "Онлайн"], status: "review",
       rating: 4.4, reviews: 18, established: 2022, seats: 20, duration: "от 30 дней",
       phone: "8 800 123-45-75", email: "info@sputnik.local",
@@ -434,8 +434,8 @@ window.NSV_DATA = {
   };
 
   const centerFallback = [
-    "center1.png", "center2.png", "center3.png", "center4.png", "center5.png",
-    "center6.png", "center7.png", "center8.png", "center9.png"
+    "center1.webp", "center2.webp", "center3.webp", "center4.webp", "center5.webp",
+    "center6.webp", "center7.webp", "center8.webp", "center9.webp"
   ];
   (data.centers || []).forEach((c, i) => {
     if (!c.image && centerFallback[i]) c.image = centerFallback[i];
@@ -444,6 +444,6 @@ window.NSV_DATA = {
     if (!center) return "";
     if (center.image) return center.image;
     const idx = (data.centers || []).findIndex((c) => c.id === center.id);
-    return centerFallback[(idx >= 0 ? idx : 0) % centerFallback.length] || "center1.png";
+    return centerFallback[(idx >= 0 ? idx : 0) % centerFallback.length] || "center1.webp";
   };
 })();

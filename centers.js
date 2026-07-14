@@ -30,7 +30,7 @@
     }
     return out.join("");
   }
-  const imgOf = window.NSVCenterImg || ((c) => (c && c.image) || "center1.png");
+  const imgOf = window.NSVCenterImg || ((c) => (c && c.image) || "center1.webp");
   function centerImg(c) {
     return imgOf(c);
   }
