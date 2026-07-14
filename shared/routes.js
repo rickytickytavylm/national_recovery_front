@@ -21,7 +21,7 @@ window.NSV_ROUTES = {
     requestDetail: "request-detail.html",
     profile: "profile.html"
   },
-  crossToCenter: "../center-platform/",
+  crossToCenter: "https://rickytickytavylm.github.io/central_platform/",
   crossToPublic: "../public-platform/",
 
   // routes.withId("center-detail.html", "yasnost") -> "center-detail.html?id=yasnost"
