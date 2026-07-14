@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Аналитика реабилитационного центра: обращения, конверсия, источники." />
+  <title>Аналитика центра — Национальная система восстановления</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="icon" href="material-first-30-days.webp" type="image/webp" sizes="192x192" />
+  <link rel="apple-touch-icon" href="material-first-30-days.webp" sizes="180x180" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="НСВ · Центры" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="app__side">
+      <a href="index.html" class="app__brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span>Центр «Ясность»</span>
+      </a>
+      <nav class="app__nav" aria-label="Кабинет">
+        <a href="dashboard.html"><span class="di" data-di="grid"></span>Обзор</a>
+        <a href="requests.html"><span class="di" data-di="inbox"></span>Заявки</a>
+        <a href="association.html"><span class="di" data-di="users"></span>Ассоциация</a>
+        <a href="programs.html"><span class="di" data-di="program"></span>Программы</a>
+        <a href="analytics.html" class="is-active"><span class="di" data-di="chart"></span>Аналитика</a>
+        <a href="profile.html"><span class="di" data-di="shield"></span>Профиль</a>
+      </nav>
+      <div class="app__side-foot">
+        <div class="app__status"><span class="dot"></span> Центр подтверждён</div>
+        <a href="index.html" class="nav__link" style="font-size:13px">← На главную сайта</a>
+      </div>
+    </aside>
+
+    <main class="app__main">
+      <div class="app__topbar">
+        <div>
+          <span class="app__topbar-eyebrow">Кабинет · Июль 2026</span>
+          <h1>Аналитика центра</h1>
+        </div>
+        <div class="app__topbar-actions">
+          <button type="button" class="btn btn--ghost btn--sm" data-soon="Выбор периода появится в полной версии">За месяц</button>
+          <button type="button" class="btn btn--primary btn--sm" data-soon="Экспорт отчёта появится позже">Экспорт отчёта</button>
+          <span class="avatar" aria-hidden="true">АП</span>
+        </div>
+      </div>
+
+      <div class="kpis">
+        <div class="kpi reveal"><span class="kpi__label">Заявок за месяц</span><span class="kpi__value" id="kpiMonth">—</span><span class="kpi__trend up">+18% к прошлому</span></div>
+        <div class="kpi reveal"><span class="kpi__label">Конверсия в программу</span><span class="kpi__value" id="kpiConv">68%</span><span class="kpi__trend up">+4 п.п.</span></div>
+        <div class="kpi reveal"><span class="kpi__label">Средний рейтинг</span><span class="kpi__value">4.9</span><span class="kpi__trend">по 128 отзывам</span></div>
+        <div class="kpi reveal"><span class="kpi__label">Среднее время ответа</span><span class="kpi__value">2.4 ч</span><span class="kpi__trend up">быстрее нормы</span></div>
+      </div>
+
+      <div class="panels">
+        <div class="panel chart-card reveal panel--nogap" style="gap:0">
+          <div class="panel__head">
+            <h3>Обращения по неделям</h3>
+            <span class="chip chip--soft">+18%</span>
+          </div>
+          <div class="bars">
+            <span style="--h: 38%"></span><span style="--h: 55%"></span><span style="--h: 47%"></span>
+            <span style="--h: 70%"></span><span style="--h: 62%"></span><span style="--h: 88%"></span>
+            <span style="--h: 80%"></span>
+          </div>
+        </div>
+
+        <div class="panel chart-card reveal" style="gap:0">
+          <div class="panel__head"><h3>Конверсия</h3></div>
+          <div class="donut" style="--val: 68; margin-top:8px">
+            <div class="donut__center"><strong>68%</strong><span>в программу</span></div>
+          </div>
+        </div>
+
+        <div class="panel reveal">
+          <div class="panel__head"><h3>Источники обращений</h3></div>
+          <div id="sources"></div>
+        </div>
+
+        <div class="panel reveal">
+          <div class="panel__head"><h3>Заявки по статусам</h3></div>
+          <div id="statuses"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="shared/config.js"></script>
+  <script src="shared/constants.js"></script>
+  <script src="shared/api.js"></script>
+  <script src="shared/routes.js"></script>
+  <script src="app.js"></script>
+  <script src="analytics.js"></script>
+</body>
+</html>

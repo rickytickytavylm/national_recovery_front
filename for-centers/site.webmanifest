@@ -1,0 +1,46 @@
+{
+  "name": "Национальная система восстановления — для центров",
+  "short_name": "НСВ · Центры",
+  "description": "Кабинет реабилитационного центра: заявки, аналитика и профиль в едином реестре.",
+  "lang": "ru",
+  "id": "./",
+  "start_url": "./dashboard.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#0f766e",
+  "categories": ["health", "business", "productivity"],
+  "icons": [
+    {
+      "src": "material-first-30-days.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "material-first-30-days.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "material-first-30-days.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Заявки",
+      "url": "./requests.html",
+      "icons": [{ "src": "material-first-30-days.webp", "sizes": "192x192", "type": "image/webp" }]
+    },
+    {
+      "name": "Аналитика",
+      "url": "./analytics.html",
+      "icons": [{ "src": "material-first-30-days.webp", "sizes": "192x192", "type": "image/webp" }]
+    }
+  ]
+}

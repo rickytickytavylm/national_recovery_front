@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Платформа для реабилитационных центров: подключение к единой цифровой системе, обращения, программы и аналитика." />
+  <title>Национальная система восстановления для центров — платформа для реабилитационных центров</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Национальная система восстановления — для центров" />
+  <meta property="og:title" content="Платформа для реабилитационных центров" />
+  <meta property="og:description" content="Подключите центр к единой цифровой системе: заявки, программы и аналитика в одном кабинете." />
+  <meta property="og:image" content="shared/assets/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Платформа для реабилитационных центров" />
+  <meta name="twitter:description" content="Заявки, программы и аналитика в одном кабинете." />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="icon" href="material-first-30-days.webp" type="image/webp" sizes="192x192" />
+  <link rel="apple-touch-icon" href="material-first-30-days.webp" sizes="180x180" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="НСВ · Центры" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===================== HEADER ===================== -->
+  <header class="header header--overlay" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Национальная система восстановления — для центров">
+        <img src="new_logo_dark.png" class="brand__icon brand__icon--dark" alt="" width="34" height="34" />
+        <img src="new_logo.png" class="brand__icon brand__icon--light" alt="" width="34" height="34" />
+        <span class="brand__name">Национальная система<span class="brand__sub">восстановления · для центров</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#features" class="nav__link">Возможности</a>
+        <a href="onboarding.html" class="nav__link">Подключение</a>
+        <a href="analytics.html" class="nav__link">Аналитика</a>
+        <a href="#integrations" class="nav__link">API</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="dashboard.html" class="btn btn--ghost btn--sm">Войти в кабинет</a>
+        <a href="onboarding.html" class="btn btn--primary btn--sm">Зарегистрировать центр</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features" class="mobile-menu__link">Возможности</a>
+      <a href="onboarding.html" class="mobile-menu__link">Подключение</a>
+      <a href="analytics.html" class="mobile-menu__link">Аналитика</a>
+      <a href="#integrations" class="mobile-menu__link">API</a>
+      <a href="dashboard.html" class="mobile-menu__link">Войти в кабинет</a>
+      <a href="onboarding.html" class="btn btn--primary">Зарегистрировать центр</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero hero--gradient">
+      <a href="index.html" class="hero__logo" aria-label="Национальная система восстановления — для центров">
+        <img src="new_logo.png" alt="" width="46" height="46" />
+      </a>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="eyebrow">B2B-платформа</span>
+          <h1 class="hero__title">Платформа для реабилитационных центров</h1>
+          <p class="hero__subtitle">
+            Подключите центр к единой цифровой системе, принимайте обращения,
+            управляйте программами и отслеживайте эффективность.
+          </p>
+          <div class="hero__actions">
+            <a href="onboarding.html" class="btn btn--primary">Зарегистрировать центр</a>
+            <a href="#features" class="btn btn--ghost">Посмотреть возможности</a>
+          </div>
+        </div>
+
+        <div class="hero__preview reveal">
+          <img src="for_hero.webp" class="hero__shot" alt="Кабинет центра на ноутбуке и смартфоне" width="1536" height="1024" loading="eager" decoding="async" />
+        </div>
+
+        <div class="hero__meta reveal">
+          <div><strong>240+</strong><span>подключённых центров</span></div>
+          <div><strong>18 300</strong><span>обращений в месяц</span></div>
+          <div><strong>99.9%</strong><span>аптайм системы</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DASHBOARD FEATURE STRIP ===================== -->
+    <section class="section" id="overview">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Единый рабочий стол</span>
+          <h2 class="section__title">Всё управление центром в одном интерфейсе</h2>
+          <p class="section__lead">Заявки, клиенты, программы, команда и аналитика — без разрозненных таблиц и мессенджеров.</p>
+        </div>
+
+        <div class="overview-grid">
+          <div class="overview-card reveal"><span class="di di--lg" data-di="inbox"></span><h3>Заявки</h3><p>Единая воронка обращений с этапами и статусами.</p></div>
+          <div class="overview-card reveal"><span class="di di--lg" data-di="users"></span><h3>Активные клиенты</h3><p>Карточки, история контактов и сопровождение.</p></div>
+          <div class="overview-card reveal"><span class="di di--lg" data-di="program"></span><h3>Программы</h3><p>Форматы, длительность и загрузка мест.</p></div>
+          <div class="overview-card reveal"><span class="di di--lg" data-di="team"></span><h3>Сотрудники</h3><p>Роли, доступы и распределение нагрузки.</p></div>
+          <div class="overview-card reveal"><span class="di di--lg" data-di="chart"></span><h3>Аналитика</h3><p>Обращения, конверсия и эффективность.</p></div>
+          <div class="overview-card reveal"><span class="di di--lg" data-di="shield"></span><h3>Статус центра</h3><p>Верификация и уровень доверия в системе.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ВОЗМОЖНОСТИ ===================== -->
+    <section class="section section--gradient" id="features">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Возможности</span>
+          <h2 class="section__title">Продукт для работы центра</h2>
+          <p class="section__lead">Модули, которые закрывают полный цикл — от первого обращения до аналитики результатов.</p>
+        </div>
+
+        <div class="features">
+          <article class="feature-card reveal"><span class="di di--lg" data-di="shield"></span><h3>Профиль центра</h3><p>Публичная страница, форматы помощи и статус проверки.</p></article>
+          <article class="feature-card reveal"><span class="di di--lg" data-di="inbox"></span><h3>Управление заявками</h3><p>Воронка обращений, этапы, ответственные и SLA.</p></article>
+          <article class="feature-card reveal"><span class="di di--lg" data-di="program"></span><h3>Программы восстановления</h3><p>Конструктор программ, места и расписание.</p></article>
+          <article class="feature-card reveal"><span class="di di--lg" data-di="team"></span><h3>Команда и специалисты</h3><p>Роли, доступы и нагрузка сотрудников.</p></article>
+          <article class="feature-card reveal"><span class="di di--lg" data-di="users"></span><h3>CRM</h3><p>История взаимодействий и сопровождение клиентов.</p></article>
+          <article class="feature-card reveal"><span class="di di--lg" data-di="chart"></span><h3>Аналитика</h3><p>Показатели по обращениям и эффективности.</p></article>
+          <article class="feature-card reveal"><span class="di di--lg" data-di="lecture"></span><h3>Онлайн-обучение</h3><p>Курсы и сертификация специалистов центра.</p></article>
+          <article class="feature-card reveal"><span class="di di--lg" data-di="api"></span><h3>Интеграции / API</h3><p>Подключение внешних систем и webhooks.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ОНБОРДИНГ ===================== -->
+    <section class="section" id="onboarding">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Подключение</span>
+          <h2 class="section__title">Онбординг центра за 5 шагов</h2>
+          <p class="section__lead">Прозрачный процесс — от создания профиля до первых обращений.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal"><span class="step__num">1</span><h3>Создайте профиль</h3><p>Заполните данные центра и форматы помощи.</p></li>
+          <li class="step reveal"><span class="step__num">2</span><h3>Добавьте программы</h3><p>Опишите направления, длительность и места.</p></li>
+          <li class="step reveal"><span class="step__num">3</span><h3>Пригласите сотрудников</h3><p>Назначьте роли и распределите доступы.</p></li>
+          <li class="step reveal"><span class="step__num">4</span><h3>Пройдите проверку</h3><p>Верификация подтверждает надёжность центра.</p></li>
+          <li class="step reveal"><span class="step__num">5</span><h3>Начните получать обращения</h3><p>Заявки поступают в единую воронку.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== АНАЛИТИКА ===================== -->
+    <section class="section section--gradient" id="analytics">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Аналитика</span>
+          <h2 class="section__title">Понятные метрики эффективности</h2>
+          <p class="section__lead">Наглядные графики по ключевым показателям работы центра.</p>
+        </div>
+
+        <div class="analytics">
+          <!-- Line/area chart: обращения -->
+          <div class="chart-card chart-card--wide reveal">
+            <div class="chart-card__head">
+              <div><span class="chart-card__label">Обращения</span><span class="chart-card__value">18 300</span></div>
+              <span class="chip chip--soft">+18% за квартал</span>
+            </div>
+            <div class="linechart" aria-hidden="true">
+              <svg viewBox="0 0 600 200" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.18" />
+                    <stop offset="100%" stop-color="var(--accent)" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <path class="linechart__area" d="M0,150 L100,130 L200,140 L300,90 L400,100 L500,55 L600,40 L600,200 L0,200 Z" fill="url(#areaFill)" />
+                <path class="linechart__line" d="M0,150 L100,130 L200,140 L300,90 L400,100 L500,55 L600,40" fill="none" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Donut: конверсия -->
+          <div class="chart-card reveal">
+            <div class="chart-card__head">
+              <div><span class="chart-card__label">Конверсия обращений</span></div>
+            </div>
+            <div class="donut" style="--val: 68">
+              <div class="donut__center"><strong>68%</strong><span>в программу</span></div>
+            </div>
+          </div>
+
+          <!-- Bars: загрузка программ -->
+          <div class="chart-card reveal">
+            <div class="chart-card__head"><div><span class="chart-card__label">Загрузка программ</span></div></div>
+            <div class="progress-list">
+              <div class="progress"><span class="progress__name">Стационар</span><span class="progress__track"><span style="--w: 88%"></span></span><span class="progress__val">88%</span></div>
+              <div class="progress"><span class="progress__name">Амбулаторно</span><span class="progress__track"><span style="--w: 64%"></span></span><span class="progress__val">64%</span></div>
+              <div class="progress"><span class="progress__name">Онлайн</span><span class="progress__track"><span style="--w: 42%"></span></span><span class="progress__val">42%</span></div>
+            </div>
+          </div>
+
+          <!-- Bars: эффективность сопровождения -->
+          <div class="chart-card chart-card--wide reveal">
+            <div class="chart-card__head">
+              <div><span class="chart-card__label">Эффективность сопровождения</span><span class="chart-card__value">92%</span></div>
+              <span class="chip chip--soft">удержание в программе</span>
+            </div>
+            <div class="bars bars--lg">
+              <span style="--h: 55%"></span><span style="--h: 68%"></span><span style="--h: 60%"></span>
+              <span style="--h: 74%"></span><span style="--h: 82%"></span><span style="--h: 88%"></span>
+              <span style="--h: 92%"></span><span style="--h: 85%"></span><span style="--h: 94%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ИНТЕГРАЦИИ ===================== -->
+    <section class="section" id="integrations">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Интеграции</span>
+          <h2 class="section__title">Подключайте привычные инструменты</h2>
+          <p class="section__lead">Открытый API и готовые интеграции для связи с вашими системами.</p>
+        </div>
+
+        <div class="integrations">
+          <div class="int-card reveal"><span class="int-card__tag">CRM</span><h3>CRM-системы</h3><p>Синхронизация клиентов и сделок.</p></div>
+          <div class="int-card reveal"><span class="int-card__tag">Voice</span><h3>Телефония</h3><p>Звонки и запись обращений.</p></div>
+          <div class="int-card reveal"><span class="int-card__tag">Web</span><h3>Формы</h3><p>Приём заявок с сайта центра.</p></div>
+          <div class="int-card reveal"><span class="int-card__tag">TG</span><h3>Telegram</h3><p>Уведомления и общение с клиентами.</p></div>
+          <div class="int-card reveal"><span class="int-card__tag">API</span><h3>Открытый API</h3><p>Полный доступ к данным центра.</p></div>
+          <div class="int-card reveal"><span class="int-card__tag">Hook</span><h3>Webhooks</h3><p>События в реальном времени.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ФИНАЛЬНЫЙ CTA ===================== -->
+    <section class="cta" id="final-cta">
+      <div class="container cta__inner reveal">
+        <h2 class="cta__title">Подключите центр к системе</h2>
+        <p class="cta__text">Регистрация занимает несколько минут. Обращения — уже на этой неделе.</p>
+        <div class="cta__actions">
+          <a href="onboarding.html" class="btn btn--primary btn--lg">Зарегистрировать центр</a>
+          <a href="dashboard.html" class="btn btn--ghost btn--lg">Войти в кабинет</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="brand brand--footer">
+          <img src="new_logo_dark.png" class="brand__icon brand__icon--dark" alt="" width="42" height="42" />
+          <span class="brand__name">Национальная система<span class="brand__sub">восстановления · для центров</span></span>
+        </a>
+        <p class="footer__tagline">Единая цифровая система для реабилитационных центров.</p>
+      </div>
+
+      <nav class="footer__col">
+        <h4>Продукт</h4>
+        <a href="#features">Возможности</a>
+        <a href="onboarding.html">Подключение</a>
+        <a href="dashboard.html">Кабинет</a>
+        <a href="requests.html">Заявки</a>
+      </nav>
+
+      <nav class="footer__col">
+        <h4>Контакты</h4>
+        <a href="tel:88001234567">8 800 123-45-67</a>
+        <a href="mailto:centers@recovery.system">centers@recovery.system</a>
+        <button type="button" class="linkish" data-soon="Telegram-канал скоро откроется">Telegram</button>
+      </nav>
+
+      <nav class="footer__col">
+        <h4>Документы</h4>
+        <button type="button" class="linkish" data-soon="Документ появится в ближайшем релизе">Договор</button>
+        <button type="button" class="linkish" data-soon="Раздел безопасности появится позже">Безопасность</button>
+        <button type="button" class="linkish" data-soon="Документация API появится позже">Документация API</button>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 Национальная система восстановления</span>
+      <a href="https://система-восстановления.рф/">Платформа для пользователей →</a>
+    </div>
+  </footer>
+
+  <script src="shared/config.js"></script>
+  <script src="shared/constants.js"></script>
+  <script src="shared/api.js"></script>
+  <script src="shared/routes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

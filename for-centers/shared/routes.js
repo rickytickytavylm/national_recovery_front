@@ -21,8 +21,8 @@ window.NSV_ROUTES = {
     requestDetail: "request-detail.html",
     profile: "profile.html"
   },
-  crossToCenter: "for-centers/",
-  crossToPublic: "../public-platform/",
+  crossToCenter: "../center-platform/",
+  crossToPublic: "https://система-восстановления.рф/",
 
   // routes.withId("center-detail.html", "yasnost") -> "center-detail.html?id=yasnost"
   withId: function (path, id) {

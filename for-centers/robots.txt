@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard.html
+Disallow: /requests.html
+Disallow: /request-detail.html
+Disallow: /profile.html
+
+Sitemap: https://centers.recovery.system/sitemap.xml

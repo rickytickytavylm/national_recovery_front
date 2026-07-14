@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Профиль реабилитационного центра в единой цифровой системе." />
+  <title>Профиль центра — Национальная система восстановления</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="icon" href="material-first-30-days.webp" type="image/webp" sizes="192x192" />
+  <link rel="apple-touch-icon" href="material-first-30-days.webp" sizes="180x180" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="НСВ · Центры" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="app__side">
+      <a href="index.html" class="app__brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span>Центр «Ясность»</span>
+      </a>
+      <nav class="app__nav" aria-label="Кабинет">
+        <a href="dashboard.html"><span class="di" data-di="grid"></span>Обзор</a>
+        <a href="requests.html"><span class="di" data-di="inbox"></span>Заявки</a>
+        <a href="association.html"><span class="di" data-di="users"></span>Ассоциация</a>
+        <a href="programs.html"><span class="di" data-di="program"></span>Программы</a>
+        <a href="analytics.html"><span class="di" data-di="chart"></span>Аналитика</a>
+        <a href="profile.html" class="is-active"><span class="di" data-di="shield"></span>Профиль</a>
+      </nav>
+      <div class="app__side-foot">
+        <div class="app__status"><span class="dot"></span> Центр подтверждён</div>
+        <a href="index.html" class="nav__link" style="font-size:13px">← На главную сайта</a>
+      </div>
+    </aside>
+
+    <main class="app__main">
+      <div class="app__topbar">
+        <div>
+          <span class="app__topbar-eyebrow">Кабинет</span>
+          <h1>Профиль центра</h1>
+        </div>
+        <div class="app__topbar-actions">
+          <button type="button" class="btn btn--ghost btn--sm" data-soon="Предпросмотр публичной страницы скоро появится">Предпросмотр</button>
+          <button type="button" class="btn btn--primary btn--sm" data-action="save-profile">Сохранить</button>
+          <span class="avatar" aria-hidden="true">АП</span>
+        </div>
+      </div>
+
+      <div class="profile-cover reveal">
+        <div class="img-ph img-ph--wide" role="img" aria-label="Обложка центра">
+          <span class="img-ph__glyph"></span>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div>
+          <div class="profile-card reveal">
+            <div class="profile-card__head">
+              <span class="profile-logo" aria-hidden="true">Я</span>
+              <div>
+                <h2>Центр «Ясность»</h2>
+                <p class="profile-card__loc">Москва · с 2016 года</p>
+              </div>
+              <span class="status status--verified" style="margin-left:auto">Проверен</span>
+            </div>
+
+            <p style="color:var(--ink-soft);font-size:15px;max-width:60ch">
+              Комплексная реабилитация с индивидуальным сопровождением. Работаем с зависимыми
+              и их близкими, используем доказательный подход и поддерживаем связь после программы.
+            </p>
+
+            <div class="profile-info">
+              <div class="info-row"><span class="info-row__label">Телефон</span><span class="info-row__value">8 800 123-45-67</span></div>
+              <div class="info-row"><span class="info-row__label">Email</span><span class="info-row__value">info@yasnost.ru</span></div>
+              <div class="info-row"><span class="info-row__label">Количество мест</span><span class="info-row__value">32</span></div>
+              <div class="info-row"><span class="info-row__label">Средняя длительность</span><span class="info-row__value">от 30 дней</span></div>
+            </div>
+
+            <div class="profile-tags">
+              <span class="tag">Стационар</span>
+              <span class="tag">Амбулаторно</span>
+              <span class="tag">Работа с семьёй</span>
+              <span class="tag">Сопровождение</span>
+            </div>
+
+            <h3 style="font-size:17px;margin:28px 0 4px">Фотографии центра</h3>
+            <div class="gallery">
+              <div class="img-ph img-ph--card" role="img" aria-label="Фото 1"><span class="img-ph__glyph"></span></div>
+              <div class="img-ph img-ph--card" role="img" aria-label="Фото 2"><span class="img-ph__glyph"></span></div>
+              <div class="img-ph img-ph--card" role="img" aria-label="Фото 3"><span class="img-ph__glyph"></span></div>
+              <div class="img-ph img-ph--card" role="img" aria-label="Фото 4"><span class="img-ph__glyph"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="side-card reveal">
+            <h3>Статус в системе</h3>
+            <div class="status-line"><span>Профиль заполнен</span><span class="status-check">✓</span></div>
+            <div class="status-line"><span>Программы добавлены</span><span class="status-check">✓</span></div>
+            <div class="status-line"><span>Команда приглашена</span><span class="status-check">✓</span></div>
+            <div class="status-line"><span>Верификация</span><span class="status-check">✓</span></div>
+          </div>
+
+          <div class="side-card reveal">
+            <h3>Показатели центра</h3>
+            <div class="status-line"><span>Рейтинг</span><span class="info-row__value">★ 4.9</span></div>
+            <div class="status-line"><span>Отзывы</span><span class="info-row__value">128</span></div>
+            <div class="status-line"><span>Заявок за месяц</span><span class="info-row__value">96</span></div>
+            <div class="status-line"><span>Конверсия</span><span class="info-row__value">68%</span></div>
+          </div>
+
+          <div class="side-card reveal">
+            <h3>Управление</h3>
+            <div class="status-line"><a href="requests.html" class="link-arrow" style="color:var(--accent)">Заявки</a></div>
+            <div class="status-line"><a href="analytics.html" class="link-arrow" style="color:var(--accent)">Аналитика</a></div>
+            <div class="status-line"><a href="onboarding.html" class="link-arrow" style="color:var(--accent)">Изменить данные</a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="shared/config.js"></script>
+  <script src="shared/constants.js"></script>
+  <script src="shared/api.js"></script>
+  <script src="shared/routes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

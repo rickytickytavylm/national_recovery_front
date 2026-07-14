@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Вступление центра в Ассоциацию: статус заявки, комментарии администратора и подача анкеты." />
+  <title>Ассоциация — Национальная система восстановления</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="icon" href="material-first-30-days.webp" type="image/webp" sizes="192x192" />
+  <link rel="apple-touch-icon" href="material-first-30-days.webp" sizes="180x180" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="НСВ · Центры" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="app__side">
+      <a href="index.html" class="app__brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span>Центр «Ясность»</span>
+      </a>
+      <nav class="app__nav" aria-label="Кабинет">
+        <a href="dashboard.html"><span class="di" data-di="grid"></span>Обзор</a>
+        <a href="requests.html"><span class="di" data-di="inbox"></span>Заявки</a>
+        <a href="association.html" class="is-active"><span class="di" data-di="users"></span>Ассоциация</a>
+        <a href="programs.html"><span class="di" data-di="program"></span>Программы</a>
+        <a href="analytics.html"><span class="di" data-di="chart"></span>Аналитика</a>
+        <a href="profile.html"><span class="di" data-di="shield"></span>Профиль</a>
+      </nav>
+      <div class="app__side-foot">
+        <div class="app__status" id="assocStatus"><span class="dot"></span> Статус центра</div>
+        <a href="index.html" class="nav__link" style="font-size:13px">← На главную сайта</a>
+      </div>
+    </aside>
+
+    <main class="app__main">
+      <div class="app__topbar">
+        <div>
+          <span class="app__topbar-eyebrow">Кабинет</span>
+          <h1>Вступление в Ассоциацию</h1>
+        </div>
+        <div class="app__topbar-actions">
+          <a href="dashboard.html" class="btn btn--ghost btn--sm">Обзор</a>
+          <span class="avatar" aria-hidden="true">АП</span>
+        </div>
+      </div>
+
+      <div class="detail-grid">
+        <div>
+          <div class="detail-panel">
+            <h3>Текущий статус</h3>
+            <p style="margin-bottom:14px" id="assocBadge"><span class="pill pill--new">Загрузка…</span></p>
+            <p class="detail-sub" id="assocHint" style="font-size:15px;color:var(--ink-soft)">Проверяем статус вашего центра…</p>
+          </div>
+
+          <div class="detail-panel">
+            <h3>История и комментарии</h3>
+            <ul class="timeline" id="assocHistory">
+              <li><div class="timeline__text">—</div></li>
+            </ul>
+          </div>
+        </div>
+
+        <aside>
+          <div class="detail-panel">
+            <h3>Анкета на вступление</h3>
+            <form id="assocForm" novalidate>
+              <div class="field">
+                <label for="legal_name">Юридическое название</label>
+                <input id="legal_name" name="legal_name" type="text" required placeholder="АНО / ООО …" />
+              </div>
+              <div class="field">
+                <label for="inn">ИНН</label>
+                <input id="inn" name="inn" type="text" inputmode="numeric" placeholder="10–12 цифр" />
+              </div>
+              <div class="field">
+                <label for="ogrn">ОГРН</label>
+                <input id="ogrn" name="ogrn" type="text" inputmode="numeric" placeholder="13–15 цифр" />
+              </div>
+              <div class="field">
+                <label for="director_name">Руководитель</label>
+                <input id="director_name" name="director_name" type="text" placeholder="ФИО" />
+              </div>
+              <div class="field">
+                <label for="comment_from_center">Комментарий</label>
+                <textarea id="comment_from_center" name="comment_from_center" placeholder="Кратко о центре и опыте"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary" style="width:100%">Отправить на рассмотрение</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <script src="shared/config.js"></script>
+  <script src="shared/constants.js"></script>
+  <script src="shared/api.js"></script>
+  <script src="shared/routes.js"></script>
+  <script src="app.js"></script>
+  <script src="association.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="0F8>=0;L=0O A8AB5<0 2>AAB0=>2;5=8O">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14a08f"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(96,150)">
+    <rect width="96" height="96" rx="22" fill="#ffffff" opacity="0.12"/>
+    <path d="M20 56h14l6-17 9 30 8-20 5 9h13" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" transform="translate(0,0)"/>
+  </g>
+  <text x="96" y="330" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#ffffff">0F8>=0;L=0O A8AB5<0</text>
+  <text x="96" y="410" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#ffffff">2>AAB0=>2;5=8O</text>
+  <text x="96" y="480" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="500" fill="#d6e8fb">48=0O F8D@>20O ?;0BD>@<0 ?><>I8 ?@8 7028A8<>ABOE</text>
+</svg>
