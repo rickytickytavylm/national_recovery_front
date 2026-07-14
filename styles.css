@@ -2123,13 +2123,13 @@ body.page-home {
 
 .article__head { order: 2; background: #fff; }
 .article__head-inner {
-  max-width: 740px;
+  max-width: 768px;
   margin: 0 auto;
   padding: 28px 24px 0;
 }
 .article__main {
   order: 3;
-  max-width: 720px;
+  max-width: 768px;
   margin: 0 auto;
   padding: 0 24px 8px;
   width: 100%;
@@ -2231,20 +2231,26 @@ body.page-home {
 @media (min-width: 901px) {
   .page-article .header--article { position: sticky; }
   .article__head-inner { padding: 48px 24px 0; text-align: left; }
-  .article__title { max-width: 16ch; letter-spacing: -.02em; }
-  .article__dek { max-width: 42ch; }
+  .article__title { letter-spacing: -.02em; }
   .article__media {
     order: 2;
-    width: min(1100px, 92vw);
-    margin: 32px auto 12px;
+    width: 100%;
+    max-width: 768px;
+    margin: 28px auto 16px;
+    padding: 0 24px;
+    background: transparent;
+    border-radius: 0;
+  }
+  .article__media-img {
+    aspect-ratio: 16 / 9;
+    min-height: 0;
     border-radius: var(--radius-lg);
     box-shadow: 0 24px 64px rgba(17, 17, 19, 0.1);
   }
-  .article__media-img { aspect-ratio: 16 / 9; min-height: 0; }
   .article__media-caption {
-    padding: 14px 20px 0;
+    padding: 14px 24px 0;
     text-align: left;
-    max-width: 1100px;
+    max-width: 768px;
     margin: 0 auto;
   }
   .article__head { order: 1; }
