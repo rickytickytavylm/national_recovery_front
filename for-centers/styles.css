@@ -763,12 +763,18 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -.02em; font-weight: 600; }
 .empty-state { text-align: center; padding: 48px 20px; color: var(--ink-faint); font-size: 16px; }
 
 @media (max-width: 1024px) {
-  .kpis { grid-template-columns: 1fr 1fr; }
-  .panels { grid-template-columns: 1fr; }
+  .kpis { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .panels { grid-template-columns: minmax(0, 1fr); }
   .profile { grid-template-columns: 1fr; }
 }
 @media (max-width: 900px) {
+  html { overflow-x: hidden; }
   .app { display: block; min-height: 100vh; }
+  .app__side { display: none; }
+  .app__main { padding: 22px 16px 48px; max-width: 100%; min-width: 0; }
+  .panels, .kpis { min-width: 0; }
+  .panel, .chart-card, .kpi { min-width: 0; }
+  .field input, .field select, .field textarea, .search input { font-size: 16px; }
 
   .app__topbar {
     flex-direction: column;
