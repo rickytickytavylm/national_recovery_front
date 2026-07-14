@@ -1,5 +1,5 @@
 /* NSV Center Platform — service worker */
-const CACHE = "nsv-center-v4";
+const CACHE = "nsv-center-v5";
 const OFFLINE_URL = "offline.html";
 
 const PRECACHE = [

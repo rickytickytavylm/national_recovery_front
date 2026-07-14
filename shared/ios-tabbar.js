@@ -55,7 +55,8 @@
   }
 
   function isCenterPlatform() {
-    return location.pathname.indexOf("center-platform") !== -1;
+    return location.pathname.indexOf("center-platform") !== -1 ||
+      location.pathname.indexOf("for-centers") !== -1;
   }
 
   function isPublicPlatform() {
