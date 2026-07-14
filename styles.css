@@ -302,7 +302,7 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -.02em; font-weight: 600; }
 .mini-card__meta { font-size: 13px; color: var(--ink-faint); }
 
 /* ---------------- Sections ---------------- */
-.section { padding: 92px 0; }
+.section { padding: 92px 0; background: var(--bg); }
 .section--muted { background: var(--bg-muted); }
 .section--gradient {
   background: var(--bg-gradient-teal);
@@ -1571,6 +1571,12 @@ img.center-card__media { display: block; width: 100%; aspect-ratio: 3 / 2; objec
 /* Hero logo — mobile only, top-left */
 .hero-c__logo {
   display: none;
+}
+
+/* Home: immersive teal base — no white bands behind status bar / overscroll */
+html.page-home-root,
+body.page-home {
+  background-color: #083a36;
 }
 
 /* Header over gradient hero */
